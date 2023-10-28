@@ -7,38 +7,54 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 Mohini Budhale</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
     <div class="header">
-         <div>
-          <h1>Lab 3 Mohini Budhale</h1>
-          <h2>Welcome to My Website</h2>
-          </div>
+        <div>
+            <h1>Lab 3 Mohini Budhale</h1>
+            <h2>Welcome to My Website</h2>
+        </div>
+    </div>
+
+    <div class="centered-form">
         <form id="mainForm">
-            <label id="heading">&emsp;Tip Calculator</label>
+            <label id="heading">Tip Calculator</label>
             <label id="heading2">for Mobile</label>
 
             <label id="top">
-                &emsp;&emsp;&emsp;&ensp;Bill Total
+                Bill Total
                 <input type="number" id="total" min="0" oninput="calc1()">
             </label>
             <div id="errorMsg"></div>
             <label>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Tip
-                <input type="range"  id="tip" value="0" min="0" max="100" oninput="calc2()">
+                Tip
+                <input type="range" id="tip" value="0" min="0" max="100" oninput="calc2()">
             </label>
             <label>
-                &emsp;&ensp;Tip Percentage
+                Tip Percentage
                 <input type="number" id="tipPercent" disabled>
             </label>
             <label>
-                &emsp;&emsp;&ensp;Tip Amount
+                Tip Amount
                 <input type="number" id="tipAmount" disabled>
             </label>
             <label id="last">
                 Total Bill with Tip
                 <input type="number" id="totalWithTip" disabled>
             </label>
-        </form>    
+        </form>
+    </div>
+</body>
+</html>
+ 
    <div class="background-container">
       <div class="moving-background"></div>
     </div>
