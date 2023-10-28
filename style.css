@@ -28,11 +28,17 @@ body {
     z-index: -1; 
 }
 .form-label {
-    background: rgba(255, 255, 255, 0.7); 
+    background: rgba(255, 255, 255, 0.7);
     padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Add background color for form inputs */
+.form-label span {
+    margin-right: 20px; 
+}
+
 .form-input {
     background: white; 
 }
