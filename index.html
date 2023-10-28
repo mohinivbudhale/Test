@@ -14,27 +14,31 @@
         <form id="mainForm">
             <label id="heading" class="form-label">Tip Calculator</label>
             <label id="heading2" class="form-label">for Mobile</label>
-            <label id="top" class="form-label">
-                <span>Bill Total</span>
-                <input type="number" id="total" class="form-input" min="0" oninput="calc1()">
-            </label>
-            <div id="errorMsg"></div>
-            <label class="form-label">
-                <span>Tip</span>
-                <input type="range" id="tip" class="form-input" value="0" min="0" max="100" oninput="calc2()">
-            </label>
-            <label class="form-label">
-                <span>Tip Percentage</span>
-                <input type="number" id="tipPercent" class="form-input" disabled>
-            </label>
-            <label class="form-label">
-                <span>Tip Amount</span>
-                <input type="number" id="tipAmount" class="form-input" disabled>
-            </label>
-            <label id="last" class="form-label">
-                <span>Total Bill with Tip</span>
-                <input type="number" id="totalWithTip" class="form-input" disabled>
-            </label>
+                <div class="form-group">
+                    <label class="form-label" for="total">Bill Total</label>
+                    <input type="number" id="total" class="form-input" min="0" oninput="calc1()">
+                </div>
+                <div id="errorMsg"></div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="tip">Tip</label>
+                    <input type="range" id="tip" class="form-input" value="0" min="0" max="100" oninput="calc2()">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="tipPercent">Tip Percentage</label>
+                    <input type="number" id="tipPercent" class="form-input" disabled>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="tipAmount">Tip Amount</label>
+                    <input type="number" id="tipAmount" class="form-input" disabled>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="totalWithTip">Total Bill with Tip</label>
+                    <input type="number" id="totalWithTip" class="form-input" disabled>
+                </div>
         </form>
     </div>
 </body>
