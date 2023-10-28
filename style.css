@@ -10,7 +10,7 @@ body{
 .background-container {
   position: relative;
   overflow: hidden;
-  height: 100px; 
+  height: 100vh;
 }
 .moving-background {
   position: absolute;
@@ -26,7 +26,7 @@ body{
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); 
+    transform: translateX(-100%); 
   }
 #errorMsg{
     color: red;
