@@ -12,29 +12,28 @@
    <div class="background-container"> </div>
     <div class="centered-form">
         <form id="mainForm">
-            <label id="heading">Tip Calculator</label>
-            <label id="heading2">for Mobile</label>
-
-            <label id="top">
+            <label id="heading" class="form-label">Tip Calculator</label>
+            <label id="heading2" class="form-label">for Mobile</label>
+            <label id="top" class="form-label">
                 Bill Total
-                <input type="number" id="total" min="0" oninput="calc1()">
+                <input type="number" id="total" class="form-input" min="0" oninput="calc1()">
             </label>
             <div id="errorMsg"></div>
-            <label>
+            <label class="form-label">
                 Tip
-                <input type="range" id="tip" value="0" min="0" max="100" oninput="calc2()">
+                <input type="range" id="tip" class="form-input" value="0" min="0" max="100" oninput="calc2()">
             </label>
-            <label>
+            <label class="form-label">
                 Tip Percentage
-                <input type="number" id="tipPercent" disabled>
+                <input type="number" id="tipPercent" class="form-input" disabled>
             </label>
-            <label>
+            <label class="form-label">
                 Tip Amount
-                <input type="number" id="tipAmount" disabled>
+                <input type="number" id "tipAmount" class="form-input" disabled>
             </label>
-            <label id="last">
+            <label id="last" class="form-label">
                 Total Bill with Tip
-                <input type="number" id="totalWithTip" disabled>
+                <input type="number" id="totalWithTip" class="form-input" disabled>
             </label>
         </form>
     </div>
