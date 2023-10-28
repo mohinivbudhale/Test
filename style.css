@@ -7,6 +7,27 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.background-container {
+  position: relative;
+  overflow: hidden;
+  height: 300px; 
+}
+.moving-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('your-moving-background-image.jpg') repeat-x;
+  animation: moveBackground 20s linear infinite;
+}
+@keyframes moveBackground {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Adjust the distance the background moves */
+  }
 #errorMsg{
     color: red;
     padding-bottom: 10px;
