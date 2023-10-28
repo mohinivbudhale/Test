@@ -14,27 +14,20 @@
         <form id="mainForm">
             <label id="heading" class="form-label">Tip Calculator</label>
             <label id="heading2" class="form-label">for Mobile</label>
-                <label id="top">
-                &emsp;&emsp;&emsp;&ensp;Bill Total
+              <div class="form-column">
+                <label for="total">Bill Total</label>
+                <label for="tip">Tip</label>
+                <label for="tipPercent">Tip Percentage</label>
+                <label for="tipAmount">Tip Amount</label>
+                <label for="totalWithTip">Total Bill with Tip</label>
+            </div>
+            <div class="form-column">
                 <input type="number" id="total" min="0" oninput="calc1()">
-            </label>
-            <div id="errorMsg"></div>
-            <label>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Tip
-                <input type="range"  id="tip" value="0" min="0" max="100" oninput="calc2()">
-            </label>
-            <label>
-                &emsp;&ensp;Tip Percentage
+                <input type="range" id="tip" value="0" min="0" max="100" oninput="calc2()">
                 <input type="number" id="tipPercent" disabled>
-            </label>
-            <label>
-                &emsp;&emsp;&ensp;Tip Amount
                 <input type="number" id="tipAmount" disabled>
-            </label>
-            <label id="last">
-                Total Bill with Tip
                 <input type="number" id="totalWithTip" disabled>
-            </label>
+            </div>
         </form>
     </div>
 </body>
