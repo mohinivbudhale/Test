@@ -21,13 +21,13 @@ body{
   background: url('background.jpg') repeat-x;
   animation: moveBackground 10s linear infinite;
 }
-@keyframes moveBackground {
+/*@keyframes moveBackground {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-100%); 
-  }
+  }*/
 #errorMsg{
     color: red;
     padding-bottom: 10px;
