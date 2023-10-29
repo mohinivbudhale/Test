@@ -10,7 +10,7 @@ body {
 }
 
 .background-container {
-    position: fixed;
+    text-align: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -56,12 +56,6 @@ body {
     }
 }
 
-.header {
-    position: relative;
-    text-align: center;
-    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
-    color: white;
-}
 .flex { 
   display: flex;
   justify-content: center;
