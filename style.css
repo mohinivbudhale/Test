@@ -7,15 +7,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.centered-form {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.7);
-    padding: 20px;
+    justify-content: center; /* Center vertically as well */
+    height: 100vh; /* Make the form take the full viewport height */
 }
 
 .background-container {
@@ -23,12 +16,14 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     background-image: url('background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -1; 
+    z-index: -1;
 }
+
+/* Remove the centered-form class and related styling */
 .form-label {
     background: rgba(255, 255, 255, 0.7);
     padding: 5px;
@@ -38,11 +33,11 @@ body {
 }
 
 .form-label span {
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .form-input {
-    background: white; 
+    background: white;
 }
 #errorMsg {
     color: red;
