@@ -7,8 +7,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center vertically as well */
-    height: 100vh; /* Make the form take the full viewport height */
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    width: 300px; /* Adjust the width as needed */
 }
 
 .background-container {
