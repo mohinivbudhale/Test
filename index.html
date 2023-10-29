@@ -11,34 +11,31 @@
 <body>      
    <div class="background-container"> </div>  
         <form id="mainForm">
-    <h1>Tip Calculator</h1>
-    <h2>for Mobile</h2>
+            <label id="heading">&emsp;Tip Calculator</label>
+            <label id="heading2">for Mobile</label>
 
-    <div class="form-group">
-        <label for="total">Bill Total</label>
-        <input type="number" id="total" min="0" oninput="calc1()">
-    </div>
-
-    <div class="form-group">
-        <label for="tip">Tip</label>
-        <input type="range" id="tip" value="0" min="0" max="100" oninput="calc2()">
-    </div>
-
-    <div class="form-group">
-        <label for="tipPercent">Tip Percentage</label>
-        <input type="number" id="tipPercent" disabled>
-    </div>
-
-    <div class="form-group">
-        <label for="tipAmount">Tip Amount</label>
-        <input type="number" id="tipAmount" disabled>
-    </div>
-
-    <div class="form-group">
-        <label for="totalWithTip">Total Bill with Tip</label>
-        <input type="number" id="totalWithTip" disabled>
-    </div>
-</form>
+            <label id="top">
+                &emsp;&emsp;&emsp;&ensp;Bill Total
+                <input type="number" id="total" min="0" oninput="calc1()">
+            </label>
+            <div id="errorMsg"></div>
+            <label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Tip
+                <input type="range"  id="tip" value="0" min="0" max="100" oninput="calc2()">
+            </label>
+            <label>
+                &emsp;&ensp;Tip Percentage
+                <input type="number" id="tipPercent" disabled>
+            </label>
+            <label>
+                &emsp;&emsp;&ensp;Tip Amount
+                <input type="number" id="tipAmount" disabled>
+            </label>
+            <label id="last">
+                Total Bill with Tip
+                <input type="number" id="totalWithTip" disabled>
+            </label>
+        </form>
 
 </body>
 </html> 
